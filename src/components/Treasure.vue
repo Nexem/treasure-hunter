@@ -16,10 +16,16 @@
   </v-row>
 
   <v-row>
-   <v-textarea v-model="output" outlined></v-textarea>
+   <v-col>
+    <span>Entry datas</span>
+    <v-textarea v-model="output" outlined></v-textarea>
+   </v-col>
   </v-row>
   <v-row>
-   <v-textarea v-model="strOut" outlined></v-textarea>
+   <v-col>
+    <span>Output datas</span>
+    <v-textarea v-model="strOut" outlined></v-textarea>
+   </v-col>
   </v-row>
   <v-row>
    <v-btn v-if="strOut !== ''" @click="downloadResults">
@@ -31,7 +37,7 @@
 
 <script>
 export default {
- name: "HelloWorld",
+ name: "Treasure",
 
  data: () => ({
   output: "",
@@ -107,8 +113,6 @@ export default {
     }
    }
    this.mapDisplay = this.map;
-   console.log(this.map);
-
    this.moveAdventurer();
   },
 
@@ -161,7 +165,6 @@ export default {
     this.mapDisplay[adventurer.positionX][adventurer.positionY] =
      this.map[this.positionX][this.positionY];
     this.mapDisplay[this.positionX][this.positionY] = ".";
-    console.log(this.mapDisplay);
     this.saveEndMap();
    });
   },

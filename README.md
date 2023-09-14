@@ -1,4 +1,5 @@
 # treasure-hunter
+Technical exercise for Carbon IT company
 
 ## Project setup
 
