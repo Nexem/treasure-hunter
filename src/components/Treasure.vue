@@ -37,8 +37,6 @@
 
 <script>
 export default {
- name: "Treasure",
-
  data: () => ({
   output: "",
   content: "",
@@ -263,9 +261,9 @@ export default {
      "A - " +
      adventurer.name +
      " - " +
-     adventurer.positionX +
-     " - " +
      adventurer.positionY +
+     " - " +
+     adventurer.positionX +
      " - " +
      adventurer.orientation +
      " - " +
