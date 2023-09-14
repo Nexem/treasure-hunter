@@ -1,4 +1,5 @@
 # treasure-hunter
+
 Technical exercise for Carbon IT company
 
 ## Project setup
@@ -11,6 +12,12 @@ npm install
 
 ```
 npm run serve
+```
+
+## Launch Tests
+
+```
+npm run test:unit
 ```
 
 ### Compiles and minifies for production
